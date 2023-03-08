@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.middle-container-merchant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: ; */
+}
+
+.container-merchant{
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid rgb(119, 115, 115);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8%;
+    box-shadow: 5px 5px;
+    padding-bottom: 20px;
+}
+
+.logo-merchant-style{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 30px 0px 50px 0px;
+}
+
+.merchant-title{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.form-merchant{
+    align-items: start;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 25vw;
+    height: 6vh;
+}
+
+.button-submit-merchant{
+    width: 100%;
+    color: white;
+    border: none;
+    /* background-color: #42B549; */
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    padding: 6px;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+}
+
+.button-submit-merchant:hover {
+    background: #bdc4bd !important;
+    color: black;
+}
+
+.input-style-merchant{
+    font-family: 'Poppins';
+    border-radius: 10px;
+    border: 1px solid;
+    /* border: 1px solid #42B549; */
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 6px 20px;
+}
+
+.input-style-merchant:focus{
+    font-family: 'Poppins';
+    border-radius: 10px;
+    border: 1px solid;
+    /* border: 1px solid #42B549; */
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 6px 20px;
+}
+
+@media only screen and (max-width: 520px) {
+    .merchant-responsive {
+      width: 80vw;
+    }
+  }

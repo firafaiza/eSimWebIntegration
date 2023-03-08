@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import { apiClientFactory } from "./shared/ApiClientFactory";
+import { clientInstance } from "./shared/AxiosClient";
+import { ServiceFactory } from "./services/ServiceFactory";
+import { DepsProvider } from "./shared/context/DependencyContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const apiClient = apiClientFactory(clientInstance);
+const services = ServiceFactory(apiClient);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <DepsProvider services={services}>
+        <App />
+      </DepsProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.logo{
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.button-space{
+    display: flex;
+    margin-top: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-style{
+    text-align: center;
+    font-family: 'Poppins';
+
+}
